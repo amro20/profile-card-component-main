@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: hsl(185, 75%, 39%) url(../images/bg-pattern-top.svg) no-repeat -300px -500px;
+}
+main {
+  font-size: 18px;
+  height: 100vh;
+  font-family: "Kumbh Sans", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+  background: url(../images/bg-pattern-bottom.svg) no-repeat 775px 400px;
+}
+.card {
+  background-color: azure;
+  width: 350px;
+  height: 400px;
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+}
+.avatar {
+  border-radius: 50%;
+  position: absolute;
+  top: 88px;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+  border: solid white 5px;
+  width: 28%;
+}
+.name {
+  display: flex;
+  margin-top: 80px;
+  align-items: center;
+  justify-content: center;
+}
+.name h3 {
+  font-weight: 700;
+  color: hsl(229, 23%, 23%);
+  font-size: 18px;
+  margin: auto 15px 0px 0px;
+}
+section {
+  font-weight: 400;
+  color: hsl(227, 10%, 46%);
+}
+.city {
+  text-align: center;
+  margin: 10px auto 25px;
+  font-weight: 400;
+  color: hsl(227, 10%, 46%);
+  font-size: medium;
+  position: relative;
+}
+.city::after {
+  content: "";
+  position: absolute;
+  background-color: hsl(227deg 10% 78%);
+  width: 100%;
+  height: 1px;
+  left: 0px;
+  bottom: -30px;
+}
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+}
+.footer div{
+	font-weight: 700;
+  color: hsl(229, 23%, 23%);
+	position: relative;
+}
+.footer div::after{
+	content: attr(progress);
+	position: absolute;
+	color: hsl(227, 10%, 46%);
+  font-size: small;
+	font-weight: normal;
+	bottom:-20px;
+	left: 3px;
+}
